@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Quicksand', 'Nunito', sans-serif;
+  }
+  
+  /* Custom scrollbar to keep it cute */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #fff5f5;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ffb6c1;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff69b4;
+  }
+}
+
+/* Custom background animated gradient */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-bg {
+  background: linear-gradient(-45deg, #fff1f2, #f5f3ff, #f0fdf4, #fefce8);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+/* Notebook lines styling */
+.notebook-paper {
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(rgba(226, 232, 240, 0.8) 1.5px, transparent 1.5px);
+  background-size: 100% 2.2rem;
+  line-height: 2.2rem;
+}
+
+/* Sparkling animation for footer/hero elements */
+@keyframes sparkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.sparkle-slow {
+  animation: sparkle 3s infinite ease-in-out;
+}
+
+.sparkle-fast {
+  animation: sparkle 1.5s infinite ease-in-out;
+}
