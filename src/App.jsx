@@ -6,7 +6,7 @@ import MessageCard from './components/MessageCard';
 import ExamChecklist from './components/ExamChecklist';
 import LuckyBoost from './components/LuckyBoost';
 import Footer from './components/Footer';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
