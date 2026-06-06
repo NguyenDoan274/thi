@@ -38,6 +38,9 @@ function App() {
       
       {/* Sticky footer */}
       <Footer />
+      
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
